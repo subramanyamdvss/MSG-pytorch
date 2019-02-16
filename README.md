@@ -1,5 +1,5 @@
 # MSG-pytorch
-  This repository contains pytorch implementation of all stochastic optmizations of PCA. Run demo.sh for a demo.
+  This repository contains pytorch implementation of all stochastic variants of PCA. Run demo.sh for a demo.
   The following table depicts results for a sample dataset. 
 
 | Method | Train obj (higher is good) | Val obj |
