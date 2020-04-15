@@ -54,7 +54,7 @@ def main():
 				U,S = U[:,:k],S[:k]
 			elif method in 'sgd':
 				if epoch==0:
-					U = gram_schmidt(nn.init.uniform_(torch.zeros(d,k)))
+					U = gram_schmidt(nn.init.uniform_(device(torch.zeros(d,k))))
 				U = stochastic_power_update(U,x,args.eta)
 				U = gram_schmidt(U)
 			elif method in 'original':
